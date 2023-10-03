@@ -22,10 +22,10 @@ export const DefaultActions = {
             requiresSelection: true,
             fileFilter: FileHelper.isOpenable,
             button: {
-                name: 'Open selection',
+                name: 'Mở lựa chọn',
                 toolbar: true,
                 contextMenu: true,
-                group: 'Actions',
+                group: 'Hành động',
                 icon: ChonkyIconName.openFiles,
             },
         } as const,
@@ -45,10 +45,10 @@ export const DefaultActions = {
         id: 'select_all_files',
         hotkeys: ['ctrl+a'],
         button: {
-            name: 'Select all files',
+            name: 'Chọn tất cả',
             toolbar: true,
             contextMenu: true,
-            group: 'Actions',
+            group: 'Hành động',
             icon: ChonkyIconName.selectAllFiles,
         },
         selectionTransform: (({ fileIds, hiddenFileIds }) => {
@@ -68,10 +68,10 @@ export const DefaultActions = {
         id: 'clear_selection',
         hotkeys: ['escape'],
         button: {
-            name: 'Clear selection',
+            name: 'Xóa lựa chọn',
             toolbar: true,
             contextMenu: true,
-            group: 'Actions',
+            group: 'Hành động',
             icon: ChonkyIconName.clearSelection,
         },
         selectionTransform: (({ prevSelection }) => {
@@ -89,7 +89,7 @@ export const DefaultActions = {
             entryHeight: 30,
         },
         button: {
-            name: 'Switch to List view',
+            name: 'Xem dạng danh sách',
             toolbar: true,
             icon: ChonkyIconName.list,
             iconOnly: true,
@@ -108,7 +108,7 @@ export const DefaultActions = {
             entryWidth: 220,
         },
         button: {
-            name: 'Switch to Compact view',
+            name: 'Xem dạng thu gọn',
             toolbar: true,
             icon: ChonkyIconName.compact,
             iconOnly: true,
@@ -121,7 +121,7 @@ export const DefaultActions = {
         id: 'enable_grid_view',
         fileViewConfig: { mode: FileViewMode.Grid, entryWidth: 165, entryHeight: 130 },
         button: {
-            name: 'Switch to Grid view',
+            name: 'Xem dạng lưới',
             toolbar: true,
             icon: ChonkyIconName.smallThumbnail,
             iconOnly: true,
@@ -134,9 +134,9 @@ export const DefaultActions = {
         id: 'sort_files_by_name',
         sortKeySelector: (file: Nullable<FileData>) => (file ? file.name.toLowerCase() : undefined),
         button: {
-            name: 'Sort by name',
+            name: 'Sắp xếp theo tên',
             toolbar: true,
-            group: 'Options',
+            group: 'Tùy chọn',
         },
     } as const),
     /**
@@ -146,9 +146,9 @@ export const DefaultActions = {
         id: 'sort_files_by_size',
         sortKeySelector: (file: Nullable<FileData>) => (file ? file.size : undefined),
         button: {
-            name: 'Sort by size',
+            name: 'Sắp xếp theo kích thước',
             toolbar: true,
-            group: 'Options',
+            group: 'Tùy chọn',
         },
     } as const),
     /**
@@ -158,9 +158,9 @@ export const DefaultActions = {
         id: 'sort_files_by_date',
         sortKeySelector: (file: Nullable<FileData>) => (file ? file.modDate : undefined),
         button: {
-            name: 'Sort by date',
+            name: 'Sắp xếp theo ngày',
             toolbar: true,
-            group: 'Options',
+            group: 'Tùy chọn',
         },
     } as const),
     /**
@@ -174,9 +174,9 @@ export const DefaultActions = {
             defaultValue: true,
         },
         button: {
-            name: 'Show hidden files',
+            name: 'Hiện tập tin ẩn',
             toolbar: true,
-            group: 'Options',
+            group: 'Tùy chọn',
         },
     } as const),
     /**
@@ -192,7 +192,7 @@ export const DefaultActions = {
         button: {
             name: 'Show folders first',
             toolbar: true,
-            group: 'Options',
+            group: 'Tùy chọn',
         },
     } as const),
     /**

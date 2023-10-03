@@ -10,10 +10,10 @@ export const ExtraActions = {
         requiresSelection: true,
         hotkeys: ['ctrl+c'],
         button: {
-            name: 'Copy selection',
+            name: 'Sao chép',
             toolbar: true,
             contextMenu: true,
-            group: 'Actions',
+            group: 'Hành động',
             icon: ChonkyIconName.copy,
         },
     } as const),
@@ -23,9 +23,9 @@ export const ExtraActions = {
     CreateFolder: defineFileAction({
         id: 'create_folder',
         button: {
-            name: 'Create folder',
+            name: 'Tạo thư mục',
             toolbar: true,
-            tooltip: 'Create a folder',
+            tooltip: 'Tạo thư mục',
             icon: ChonkyIconName.folderCreate,
         },
     } as const),
@@ -35,9 +35,9 @@ export const ExtraActions = {
     UploadFiles: defineFileAction({
         id: 'upload_files',
         button: {
-            name: 'Upload files',
+            name: 'Tải lên tập tin',
             toolbar: true,
-            tooltip: 'Upload files',
+            tooltip: 'Tải lên tập tin',
             icon: ChonkyIconName.upload,
         },
     } as const),
@@ -51,7 +51,7 @@ export const ExtraActions = {
             name: 'Download files',
             toolbar: true,
             contextMenu: true,
-            group: 'Actions',
+            group: 'Hành động',
             icon: ChonkyIconName.download,
         },
     } as const),
@@ -63,10 +63,10 @@ export const ExtraActions = {
         requiresSelection: true,
         hotkeys: ['delete'],
         button: {
-            name: 'Delete files',
+            name: 'Xóa tập tin',
             toolbar: true,
             contextMenu: true,
-            group: 'Actions',
+            group: 'Hành động',
             icon: ChonkyIconName.trash,
         },
     } as const),
